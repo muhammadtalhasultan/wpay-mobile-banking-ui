@@ -318,9 +318,10 @@ class _TopUpBankState extends State<TopUpBank> {
                       child: Row(
                         children: [
                           ElevatedButton(
-                              onPressed: details.onStepContinue,
-                              child: const Text("Continue")),
-                          FlatButton(
+                            onPressed: details.onStepContinue,
+                            child: const Text("Continue"),
+                          ),
+                          ElevatedButton(
                             onPressed: details.onStepCancel,
                             child: Text("Cancel",
                                 style: TextStyle(

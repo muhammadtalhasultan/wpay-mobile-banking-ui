@@ -29,21 +29,41 @@ class _IntroPageState extends State<IntroPage> {
           controller: _controller,
           children: [
             Stack(
+              alignment: AlignmentDirectional.center,
               children: [
-                Padding(
-                  padding: EdgeInsets.only(left: 326.w, top: 87.h),
+                Positioned(
+                  left: 326.w,
+                  top: 87.h,
                   child: InkWell(
                     onTap: () => _controller.jumpToPage(2),
                     child: Text("Skip",
                         style: TextStyle(color: Colors.white, fontSize: 16.sp)),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(top: 170.h, left: 37.w),
-                  child: Image.asset("images/QR Code Illustration.png"),
+                // Padding(
+                //   padding: EdgeInsets.only(left: 326.w, top: 87.h),
+                //   child: InkWell(
+                //     onTap: () => _controller.jumpToPage(2),
+                //     child: Text("Skip",
+                //         style: TextStyle(color: Colors.white, fontSize: 16.sp)),
+                //   ),
+                // ),
+                Positioned(
+                  top: 188.h,
+                  child: InkWell(
+                    onTap: () => _controller.jumpToPage(2),
+                    child: Image.asset("images/QR Code Illustration.png"),
+                  ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(top: 499.h, left: 166.w),
+                // Center(
+                //   child: Image.asset("images/QR Code Illustration.png"),
+                // ),
+                // Padding(
+                //   padding: EdgeInsets.only(top: 170.h, left: 37.w),
+                //   child: Image.asset("images/QR Code Illustration.png"),
+                // ),
+                Positioned(
+                  top: 499.h,
                   child: SmoothPageIndicator(
                       controller: _controller,
                       count: 3,
@@ -56,6 +76,20 @@ class _IntroPageState extends State<IntroPage> {
                           dotWidth: 6.w,
                           activeDotColor: Colors.white)),
                 ),
+                // Padding(
+                //   padding: EdgeInsets.only(top: 499.h, left: 166.w),
+                //   child: SmoothPageIndicator(
+                //       controller: _controller,
+                //       count: 3,
+                //       effect: ScaleEffect(
+                //           activeStrokeWidth: 2,
+                //           activePaintStyle: PaintingStyle.stroke,
+                //           paintStyle: PaintingStyle.stroke,
+                //           dotColor: Colors.grey,
+                //           dotHeight: 6.h,
+                //           dotWidth: 6.w,
+                //           activeDotColor: Colors.white)),
+                // ),
                 Padding(
                   padding: EdgeInsets.only(top: 533.h),
                   child: Container(
@@ -90,20 +124,23 @@ class _IntroPageState extends State<IntroPage> {
                           ),
                         ),
                         SizedBox(
-                          height: 64.h,
+                          height: 54.h,
                         ),
                         ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                                primary: const Color(0xff4CD080),
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(16.r)),
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 150.w, vertical: 18.h)),
-                            onPressed: () => _controller.nextPage(
-                                duration: const Duration(milliseconds: 400),
-                                curve: Curves.easeInOut),
-                            child:
-                                Text("Next", style: TextStyle(fontSize: 16.sp)))
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xff4CD080),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(16.r)),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 150.w, vertical: 18.h)),
+                          onPressed: () => _controller.nextPage(
+                              duration: const Duration(milliseconds: 400),
+                              curve: Curves.easeInOut),
+                          child: Text(
+                            "Next",
+                            style: TextStyle(fontSize: 16.sp),
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -172,11 +209,11 @@ class _IntroPageState extends State<IntroPage> {
                           ),
                         ),
                         SizedBox(
-                          height: 64.h,
+                          height: 54.h,
                         ),
                         ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                primary: const Color(0xff4CD080),
+                                backgroundColor: const Color(0xff4CD080),
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(16.r)),
                                 padding: EdgeInsets.symmetric(
@@ -189,7 +226,7 @@ class _IntroPageState extends State<IntroPage> {
                       ],
                     ),
                   ),
-                )
+                ),
               ],
             ), // ! page 2
             Stack(
@@ -209,16 +246,17 @@ class _IntroPageState extends State<IntroPage> {
                 Padding(
                   padding: EdgeInsets.only(top: 499.h, left: 166.w),
                   child: SmoothPageIndicator(
-                      controller: _controller,
-                      count: 3,
-                      effect: ScaleEffect(
-                          activeStrokeWidth: 2,
-                          activePaintStyle: PaintingStyle.stroke,
-                          paintStyle: PaintingStyle.stroke,
-                          dotColor: Colors.grey,
-                          dotHeight: 6.h,
-                          dotWidth: 6.w,
-                          activeDotColor: Colors.white)),
+                    controller: _controller,
+                    count: 3,
+                    effect: ScaleEffect(
+                        activeStrokeWidth: 2,
+                        activePaintStyle: PaintingStyle.stroke,
+                        paintStyle: PaintingStyle.stroke,
+                        dotColor: Colors.grey,
+                        dotHeight: 6.h,
+                        dotWidth: 6.w,
+                        activeDotColor: Colors.white),
+                  ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 533.h),
@@ -254,11 +292,11 @@ class _IntroPageState extends State<IntroPage> {
                           ),
                         ),
                         SizedBox(
-                          height: 64.h,
+                          height: 54.h,
                         ),
                         ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                primary: const Color(0xff4CD080),
+                                backgroundColor: const Color(0xff4CD080),
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(16.r)),
                                 padding: EdgeInsets.symmetric(
