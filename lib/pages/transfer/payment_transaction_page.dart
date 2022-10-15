@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -129,7 +130,9 @@ class PaymentTransaction extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(top: 568.h, left: 164.w),
-            child: Image.asset("images/Home Indicator.png"),
+            child: Image.asset(
+              "images/home_indicator.png",
+            ),
           ),
           Padding(
             padding: EdgeInsets.only(top: 589.h, left: 16.w),
@@ -145,36 +148,39 @@ class PaymentTransaction extends StatelessWidget {
               width: 343.w,
               height: 72.h,
               padding: EdgeInsets.only(
-                left: 16.w,
+                left: 10.w,
               ),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16.r),
                   color: const Color(0x0fff2ff2)),
               child: Row(
                 children: [
-                  Image.asset("images/Mask Group.png"),
+                  Container(
+                      width: 80,
+                      height: 80,
+                      child: SvgPicture.asset("images/Logo.svg")),
                   SizedBox(
                     width: 16.w,
                   ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Wally Virtual Card",
-                          style: GoogleFonts.dmSans(
-                              color: Theme.of(context).primaryColor,
-                              fontSize: 14.sp,
-                              fontWeight: FontWeight.bold)),
-                      SizedBox(
-                        height: 4.h,
-                      ),
-                      Text("0318-1608-2105",
-                          style: GoogleFonts.dmSans(
-                              fontSize: 12.sp, color: Colors.grey))
-                    ],
-                  ),
-                  SizedBox(
-                    width: 100.w,
+                  Container(
+                    width: 200.w,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Wally Virtual Card",
+                            style: GoogleFonts.dmSans(
+                                color: Theme.of(context).primaryColor,
+                                fontSize: 14.sp,
+                                fontWeight: FontWeight.bold)),
+                        SizedBox(
+                          height: 4.h,
+                        ),
+                        Text("0318-1608-2105",
+                            style: GoogleFonts.dmSans(
+                                fontSize: 12.sp, color: Colors.grey))
+                      ],
+                    ),
                   ),
                   Image.asset("images/Iconnavbottom.png",
                       width: 30.w, height: 30.h, color: const Color(0xff105D38))

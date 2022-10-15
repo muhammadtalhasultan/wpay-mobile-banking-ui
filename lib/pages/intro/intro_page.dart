@@ -40,14 +40,6 @@ class _IntroPageState extends State<IntroPage> {
                         style: TextStyle(color: Colors.white, fontSize: 16.sp)),
                   ),
                 ),
-                // Padding(
-                //   padding: EdgeInsets.only(left: 326.w, top: 87.h),
-                //   child: InkWell(
-                //     onTap: () => _controller.jumpToPage(2),
-                //     child: Text("Skip",
-                //         style: TextStyle(color: Colors.white, fontSize: 16.sp)),
-                //   ),
-                // ),
                 Positioned(
                   top: 188.h,
                   child: InkWell(
@@ -55,13 +47,6 @@ class _IntroPageState extends State<IntroPage> {
                     child: Image.asset("images/QR Code Illustration.png"),
                   ),
                 ),
-                // Center(
-                //   child: Image.asset("images/QR Code Illustration.png"),
-                // ),
-                // Padding(
-                //   padding: EdgeInsets.only(top: 170.h, left: 37.w),
-                //   child: Image.asset("images/QR Code Illustration.png"),
-                // ),
                 Positioned(
                   top: 499.h,
                   child: SmoothPageIndicator(
@@ -76,22 +61,8 @@ class _IntroPageState extends State<IntroPage> {
                           dotWidth: 6.w,
                           activeDotColor: Colors.white)),
                 ),
-                // Padding(
-                //   padding: EdgeInsets.only(top: 499.h, left: 166.w),
-                //   child: SmoothPageIndicator(
-                //       controller: _controller,
-                //       count: 3,
-                //       effect: ScaleEffect(
-                //           activeStrokeWidth: 2,
-                //           activePaintStyle: PaintingStyle.stroke,
-                //           paintStyle: PaintingStyle.stroke,
-                //           dotColor: Colors.grey,
-                //           dotHeight: 6.h,
-                //           dotWidth: 6.w,
-                //           activeDotColor: Colors.white)),
-                // ),
-                Padding(
-                  padding: EdgeInsets.only(top: 533.h),
+                Positioned(
+                  top: 533.h,
                   child: Container(
                     width: 375.w,
                     height: 300.h,
@@ -144,25 +115,30 @@ class _IntroPageState extends State<IntroPage> {
                       ],
                     ),
                   ),
-                )
+                ),
               ],
             ), // ! page 1
             Stack(
+              alignment: AlignmentDirectional.center,
               children: [
-                Padding(
-                  padding: EdgeInsets.only(left: 326.w, top: 87.h),
+                Positioned(
+                  left: 326.w,
+                  top: 87.h,
                   child: InkWell(
-                    onTap: () => _controller.jumpToPage(2),
+                    onTap: () => _controller.jumpToPage(3),
                     child: Text("Skip",
                         style: TextStyle(color: Colors.white, fontSize: 16.sp)),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(top: 116.h, left: 62.w),
-                  child: Image.asset("images/Face ID Illustration.png"),
+                Positioned(
+                  top: 188.h,
+                  child: InkWell(
+                    onTap: () => _controller.jumpToPage(2),
+                    child: Image.asset("images/Face ID Illustration.png"),
+                  ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(top: 499.h, left: 166.w),
+                Positioned(
+                  top: 499.h,
                   child: SmoothPageIndicator(
                       controller: _controller,
                       count: 3,
@@ -175,8 +151,8 @@ class _IntroPageState extends State<IntroPage> {
                           dotWidth: 6.w,
                           activeDotColor: Colors.white)),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(top: 533.h),
+                Positioned(
+                  top: 533.h,
                   child: Container(
                     width: 375.w,
                     height: 300.h,
@@ -212,54 +188,62 @@ class _IntroPageState extends State<IntroPage> {
                           height: 54.h,
                         ),
                         ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xff4CD080),
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(16.r)),
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 150.w, vertical: 18.h)),
-                            onPressed: () => _controller.nextPage(
-                                duration: const Duration(milliseconds: 400),
-                                curve: Curves.easeInOut),
-                            child:
-                                Text("Next", style: TextStyle(fontSize: 16.sp)))
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xff4CD080),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(16.r)),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 150.w, vertical: 18.h)),
+                          onPressed: () => _controller.nextPage(
+                              duration: const Duration(milliseconds: 400),
+                              curve: Curves.easeInOut),
+                          child: Text(
+                            "Next",
+                            style: TextStyle(fontSize: 16.sp),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
               ],
-            ), // ! page 2
+            ), //! page2
+
             Stack(
+              alignment: AlignmentDirectional.center,
               children: [
-                Padding(
-                  padding: EdgeInsets.only(left: 326.w, top: 87.h),
+                Positioned(
+                  left: 326.w,
+                  top: 87.h,
                   child: InkWell(
-                    onTap: () => _controller.jumpToPage(2),
+                    onTap: () => _controller.jumpToPage(3),
                     child: Text("Skip",
                         style: TextStyle(color: Colors.white, fontSize: 16.sp)),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(top: 149.h, left: 21.w),
-                  child: Image.asset("images/Illustration-3.png"),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 499.h, left: 166.w),
-                  child: SmoothPageIndicator(
-                    controller: _controller,
-                    count: 3,
-                    effect: ScaleEffect(
-                        activeStrokeWidth: 2,
-                        activePaintStyle: PaintingStyle.stroke,
-                        paintStyle: PaintingStyle.stroke,
-                        dotColor: Colors.grey,
-                        dotHeight: 6.h,
-                        dotWidth: 6.w,
-                        activeDotColor: Colors.white),
+                Positioned(
+                  top: 188.h,
+                  child: InkWell(
+                    onTap: () => _controller.jumpToPage(2),
+                    child: Image.asset("images/Illustration-3.png"),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(top: 533.h),
+                Positioned(
+                  top: 499.h,
+                  child: SmoothPageIndicator(
+                      controller: _controller,
+                      count: 3,
+                      effect: ScaleEffect(
+                          activeStrokeWidth: 2,
+                          activePaintStyle: PaintingStyle.stroke,
+                          paintStyle: PaintingStyle.stroke,
+                          dotColor: Colors.grey,
+                          dotHeight: 6.h,
+                          dotWidth: 6.w,
+                          activeDotColor: Colors.white)),
+                ),
+                Positioned(
+                  top: 533.h,
                   child: Container(
                     width: 375.w,
                     height: 300.h,
@@ -295,27 +279,28 @@ class _IntroPageState extends State<IntroPage> {
                           height: 54.h,
                         ),
                         ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xff4CD080),
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(16.r)),
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 130.w, vertical: 18.h)),
-                            onPressed: () {
-                              Navigator.pushReplacement(
-                                  context,
-                                  PageTransition(
-                                      child: const Signup(),
-                                      type: PageTransitionType.fade));
-                            },
-                            child: Text("Get Strated",
-                                style: TextStyle(fontSize: 16.sp)))
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xff4CD080),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(16.r)),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 130.w, vertical: 18.h)),
+                          onPressed: () => Navigator.pushReplacement(
+                              context,
+                              PageTransition(
+                                  child: const Signup(),
+                                  type: PageTransitionType.fade)),
+                          child: Text(
+                            "Get Started",
+                            style: TextStyle(fontSize: 16.sp),
+                          ),
+                        ),
                       ],
                     ),
                   ),
-                )
+                ),
               ],
-            ),
+            ), //! page3
           ],
         ));
   }

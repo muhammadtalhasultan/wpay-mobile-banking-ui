@@ -86,7 +86,7 @@ class ScanQRCode extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(top: 579.h, left: 164.w),
-            child: Image.asset("images/Home Indicator.png"),
+            child: Image.asset("images/home_indicator.png"),
           ),
           Padding(
             padding: EdgeInsets.only(top: 600.h, left: 16.w),

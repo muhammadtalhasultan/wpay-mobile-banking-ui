@@ -36,9 +36,9 @@ class _LoginPageState extends State<LoginPage> {
                   border: InputBorder.none,
                   hintText: 'Your Email',
                   hintStyle: GoogleFonts.dmSans(
-                    fontSize: 16.sp,
-                    color: Colors.grey,
-                  ),
+                      fontSize: 16.sp, color: Color(0xFF8F92A1)
+                      //Colors.grey,
+                      ),
                 ),
                 style: const TextStyle(
                     color: Colors.black, fontWeight: FontWeight.bold),
@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                   hintText: 'Password',
                   hintStyle: GoogleFonts.dmSans(
                     fontSize: 16.sp,
-                    color: Colors.grey,
+                    color: Color(0xFF8F92A1),
                   ),
                 ),
                 style: const TextStyle(
@@ -131,7 +131,7 @@ class _LoginPageState extends State<LoginPage> {
                     TextSpan(
                         text: "New to Wpay? ",
                         style: GoogleFonts.dmSans(
-                            fontSize: 16.sp, color: Colors.grey)),
+                            fontSize: 16.sp, color: Color(0xFF8F92A1))),
                     TextSpan(
                       text: "Sign Up",
                       style: GoogleFonts.dmSans(
@@ -146,7 +146,8 @@ class _LoginPageState extends State<LoginPage> {
               padding: EdgeInsets.only(top: 618.h, left: 127.w),
               child: Text(
                 "or continue with",
-                style: GoogleFonts.dmSans(fontSize: 16.sp, color: Colors.grey),
+                style: GoogleFonts.dmSans(
+                    fontSize: 16.sp, color: Color(0xFF8F92A1)),
               ),
             ),
             Padding(
