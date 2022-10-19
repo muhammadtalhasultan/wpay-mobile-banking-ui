@@ -21,7 +21,11 @@ class Registrar extends StatelessWidget {
                   padding: EdgeInsets.only(top: 60.h, left: 105.w),
                   child: SvgPicture.asset("images/Logo.svg")),
               Padding(
-                padding: EdgeInsets.only(top: 220.h, left: 16.w),
+                padding: EdgeInsets.only(
+                  top: 220.h,
+                  left: 16.w,
+                  right: 16.w,
+                ),
                 child: TextField(
                   textInputAction: TextInputAction.done,
                   decoration: InputDecoration(
@@ -39,7 +43,11 @@ class Registrar extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 265.h, left: 16.w),
+                padding: EdgeInsets.only(
+                  top: 265.h,
+                  left: 16.w,
+                  right: 16.w,
+                ),
                 child: Divider(
                   color: Theme.of(context).primaryColor,
                 ),

@@ -28,7 +28,11 @@ class _LoginPageState extends State<LoginPage> {
                 padding: EdgeInsets.only(top: 60.h, left: 105.w),
                 child: SvgPicture.asset("images/Logo.svg")),
             Padding(
-              padding: EdgeInsets.only(top: 220.h, left: 16.w),
+              padding: EdgeInsets.only(
+                top: 220.h,
+                left: 16.w,
+                right: 16.w,
+              ),
               child: TextField(
                 textInputAction: TextInputAction.done,
                 decoration: InputDecoration(
@@ -45,11 +49,19 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 265.h, left: 16.w),
+              padding: EdgeInsets.only(
+                top: 265.h,
+                left: 16.w,
+                right: 16.w,
+              ),
               child: Divider(color: Theme.of(context).primaryColor),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 300.h, left: 16.w),
+              padding: EdgeInsets.only(
+                top: 300.h,
+                left: 16.w,
+                right: 16.w,
+              ),
               child: TextField(
                 textInputAction: TextInputAction.done,
                 obscureText: showpassword,
@@ -78,11 +90,15 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 340.h, left: 16.w),
+              padding: EdgeInsets.only(
+                top: 340.h,
+                left: 16.w,
+                right: 16.w,
+              ),
               child: Divider(color: Theme.of(context).primaryColor),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 315.h, left: 215.w),
+              padding: EdgeInsets.only(top: 315.h, left: 200.w),
               child: InkWell(
                 onTap: () {
                   Navigator.push(
@@ -101,7 +117,10 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 380.h, left: 16.w),
+              padding: EdgeInsets.only(
+                top: 380.h,
+                left: 16.w,
+              ),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       primary: const Color(0xff4CD080),
