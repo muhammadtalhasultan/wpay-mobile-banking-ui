@@ -13,20 +13,26 @@ class Signup extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xff105D38),
       body: Stack(
+        alignment: AlignmentDirectional.topCenter,
         children: [
-          Padding(
-            padding: EdgeInsets.only(
-              left: 6.w,
-            ),
+          Positioned(
+            top: 0,
             child: Image.asset(
               "images/Vector.png",
+              fit: BoxFit.fitWidth,
+              width: MediaQuery.of(context).size.width,
             ),
           ),
-          Padding(
-              padding: EdgeInsets.only(top: 180.h, left: 8.w),
-              child: Image.asset("images/Illustrations.png")),
-          Padding(
-            padding: EdgeInsets.only(top: 550.h, left: 40.w),
+          Positioned(
+            top: 180.h,
+            child: Image.asset(
+              "images/Illustrations.png",
+              fit: BoxFit.fitWidth,
+              width: MediaQuery.of(context).size.width,
+            ),
+          ),
+          Positioned(
+            top: 560.h,
             child: Text(
               "   A new way to pay \n anything more faster",
               style: TextStyle(
@@ -35,37 +41,42 @@ class Signup extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(top: 658.h, left: 16.w),
+          Positioned(
+            top: 640.h,
             child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    primary: const Color(0xff4CD080),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16.r)),
-                    padding: EdgeInsets.symmetric(
-                        horizontal: 150.w, vertical: 18.h)),
-                onPressed: () {
-                  Navigator.pushReplacement(
-                      context,
-                      PageTransition(
-                          child: LoginPage(), type: PageTransitionType.fade));
-                },
-                child: Text("Login", style: TextStyle(fontSize: 16.sp))),
-          ),
-          Padding(
-              padding: EdgeInsets.only(left: 160.w, top: 750.h),
-              child: InkWell(
-                onTap: () => Navigator.pushReplacement(
+              style: ElevatedButton.styleFrom(
+                  primary: const Color(0xff4CD080),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16.r)),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 100.w, vertical: 18.h)),
+              onPressed: () {
+                Navigator.pushReplacement(
                     context,
                     PageTransition(
-                      child: const Registrar(),
-                      type: PageTransitionType.fade,
-                    )),
-                child: Text(
-                  "Sign Up",
-                  style: TextStyle(fontSize: 16.sp, color: Colors.white),
-                ),
-              ))
+                        child: LoginPage(), type: PageTransitionType.fade));
+              },
+              child: Text(
+                "Login",
+                style: TextStyle(fontSize: 16.sp),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 710.h,
+            child: InkWell(
+              onTap: () => Navigator.pushReplacement(
+                  context,
+                  PageTransition(
+                    child: const Registrar(),
+                    type: PageTransitionType.fade,
+                  )),
+              child: Text(
+                "Sign Up",
+                style: TextStyle(fontSize: 16.sp, color: Colors.white),
+              ),
+            ),
+          ),
         ],
       ),
     );
