@@ -70,7 +70,7 @@ class AddCreditCard extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(top: 214.h, left: 163.w),
             child: Image.asset(
-              "images/Home Indicator.png",
+              "images/home_indicator.png",
               color: Theme.of(context).backgroundColor.withOpacity(0.1),
             ),
           ),

@@ -86,7 +86,7 @@ class _TransferWallyState extends State<TransferWally> {
           Padding(
             padding: EdgeInsets.only(top: 140.h, left: 163.w),
             child: Image.asset(
-              "images/Home Indicator.png",
+              "images/home_indicator.png",
               color: Theme.of(context).backgroundColor.withOpacity(0.1),
             ),
           ),

@@ -71,7 +71,7 @@ class TransformDsetination extends StatelessWidget {
                   SizedBox(
                     height: 16.h,
                   ),
-                  Image.asset("images/Home Indicator.png"),
+                  Image.asset("images/home_indicator.png"),
                   SizedBox(
                     height: 20.h,
                   ),

@@ -57,7 +57,16 @@ class _SetupPasswordPageState extends State<SetupPasswordPage> {
                 ),
               )),
           Padding(
-            padding: EdgeInsets.only(top: 198.h, left: 16.w),
+              padding: EdgeInsets.only(top: 188.h, left: 16.w),
+              child: Text(
+                "Password",
+                style: GoogleFonts.dmSans(
+                  fontSize: 18.sp,
+                  color: const Color(0xff8F92A1),
+                ),
+              )),
+          Padding(
+            padding: EdgeInsets.only(top: 210.h, left: 16.w),
             child: TextField(
               textInputAction: TextInputAction.done,
               obscureText: showpassword,
@@ -75,7 +84,7 @@ class _SetupPasswordPageState extends State<SetupPasswordPage> {
                       color: Theme.of(context).primaryColor,
                     )),
                 suffixIconColor: Colors.grey,
-                hintText: 'Password',
+                hintText: '123wert',
                 hintStyle: GoogleFonts.dmSans(
                   fontSize: 16.sp,
                   color: Colors.grey,

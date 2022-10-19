@@ -76,7 +76,7 @@ class NameRegister extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 720.h, left: 14.w),
+              padding: EdgeInsets.only(top: 400.h, left: 14.w),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       primary: const Color(0xff4CD080),

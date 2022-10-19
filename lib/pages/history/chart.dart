@@ -83,7 +83,7 @@ class ChartHistory extends StatelessWidget {
               ]))),
           Padding(
             padding: EdgeInsets.only(top: 140.h, left: 163.w),
-            child: Image.asset("images/Home Indicator.png"),
+            child: Image.asset("images/home_indicator.png"),
           ),
           Padding(
               padding: EdgeInsets.only(top: 534.h, left: 16.w),

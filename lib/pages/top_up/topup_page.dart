@@ -72,7 +72,7 @@ class TopUp extends StatelessWidget {
                     height: 16.h,
                   ),
                   Image.asset(
-                    "images/Home Indicator.png",
+                    "images/home_indicator.png",
                     color: Theme.of(context).backgroundColor.withOpacity(0.1),
                   ),
                 ],

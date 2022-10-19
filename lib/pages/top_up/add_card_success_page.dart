@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
 
-
 import 'payment_topup_page.dart';
 
 class AddCardSuccess extends StatelessWidget {

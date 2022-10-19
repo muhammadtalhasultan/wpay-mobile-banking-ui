@@ -82,7 +82,7 @@ class NotificationPage extends StatelessWidget {
           ),
           Positioned(
             top: 140.h,
-            child: Image.asset("images/Home Indicator.png",
+            child: Image.asset("images/home_indicator.png",
                 // TODO change colour of home indicator to white
                 color: Theme.of(context).backgroundColor.withOpacity(0.1)),
           ),
@@ -239,6 +239,7 @@ class NotificationPage extends StatelessWidget {
       Card(
         borderOnForeground: false,
         semanticContainer: false,
+        shadowColor: Colors.transparent,
         child: Padding(
           padding: EdgeInsets.only(bottom: 15.h),
           child: Row(

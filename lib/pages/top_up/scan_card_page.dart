@@ -165,7 +165,7 @@ class _ScanCardState extends State<ScanCard> {
             Padding(
               padding: EdgeInsets.only(top: 189.h, left: 163.w),
               child: Image.asset(
-                "images/Home Indicator.png",
+                "images/home_indicator.png",
                 color: Theme.of(context).backgroundColor.withOpacity(0.1),
               ),
             ),

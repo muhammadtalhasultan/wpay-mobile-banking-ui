@@ -37,7 +37,7 @@ class PaymentTopUp extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             padding: EdgeInsets.only(
               left: 20.w,
-              top: 50.h,
+              top: 70.h,
               right: 20.w,
             ),
             child: SvgPicture.asset(
@@ -97,7 +97,7 @@ class PaymentTopUp extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 435.h, left: 20.w),
+            padding: EdgeInsets.only(top: 435.h, left: 32.w, right: 32.w),
             child: DottedLine(
               direction: Axis.horizontal,
               lineLength: double.infinity,

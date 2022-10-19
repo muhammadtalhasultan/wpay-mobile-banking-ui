@@ -48,7 +48,7 @@ class PaymentReceipt extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(16.r)),
                 child: Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.only(left: 20.0, right: 20.0),
                   child: Stack(
                     children: [
                       Column(

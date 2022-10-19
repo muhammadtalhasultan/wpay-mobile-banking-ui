@@ -42,7 +42,7 @@ class _AddCardConfirmState extends State<AddCardConfirm> {
           Padding(
             padding: EdgeInsets.only(top: 100.h, left: 163.w),
             child: Image.asset(
-              "images/Home Indicator.png",
+              "images/home_indicator.png",
               color: Theme.of(context).backgroundColor.withOpacity(0.1),
             ),
           ),
