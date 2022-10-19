@@ -33,11 +33,9 @@ class _LoginPageState extends State<LoginPage> {
                 left: 16.w,
                 right: 16.w,
               ),
-              child: TextField(
+              child: TextFormField(
                 textInputAction: TextInputAction.done,
                 decoration: InputDecoration(
-                  enabledBorder: InputBorder.none,
-                  border: InputBorder.none,
                   hintText: 'Your Email',
                   hintStyle: GoogleFonts.dmSans(
                       fontSize: 16.sp, color: Color(0xFF8F92A1)
@@ -50,24 +48,14 @@ class _LoginPageState extends State<LoginPage> {
             ),
             Padding(
               padding: EdgeInsets.only(
-                top: 265.h,
-                left: 16.w,
-                right: 16.w,
-              ),
-              child: Divider(color: Theme.of(context).primaryColor),
-            ),
-            Padding(
-              padding: EdgeInsets.only(
                 top: 300.h,
                 left: 16.w,
                 right: 16.w,
               ),
-              child: TextField(
+              child: TextFormField(
                 textInputAction: TextInputAction.done,
                 obscureText: showpassword,
                 decoration: InputDecoration(
-                  enabledBorder: InputBorder.none,
-                  border: InputBorder.none,
                   suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
@@ -90,15 +78,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(
-                top: 340.h,
-                left: 16.w,
-                right: 16.w,
-              ),
-              child: Divider(color: Theme.of(context).primaryColor),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 315.h, left: 200.w),
+              padding: EdgeInsets.only(top: 310.h, left: 200.w),
               child: InkWell(
                 onTap: () {
                   Navigator.push(

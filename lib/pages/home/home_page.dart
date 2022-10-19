@@ -104,7 +104,7 @@ class _HomeState extends State<Home> {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         width: 343.w,
-                        height: 84.h,
+                        height: 94.h,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(16),
                             color: const Color(0xff4CD080)),

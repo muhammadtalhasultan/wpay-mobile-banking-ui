@@ -13,7 +13,7 @@ class SetupPasswordPage extends StatefulWidget {
 }
 
 class _SetupPasswordPageState extends State<SetupPasswordPage> {
-  bool showpassword = true;
+  bool showpassword = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,13 +66,15 @@ class _SetupPasswordPageState extends State<SetupPasswordPage> {
                 ),
               )),
           Padding(
-            padding: EdgeInsets.only(top: 210.h, left: 16.w),
-            child: TextField(
+            padding: EdgeInsets.only(
+              top: 220.h,
+              left: 16.w,
+              right: 16.w,
+            ),
+            child: TextFormField(
               textInputAction: TextInputAction.done,
               obscureText: showpassword,
               decoration: InputDecoration(
-                enabledBorder: InputBorder.none,
-                border: InputBorder.none,
                 suffixIcon: IconButton(
                     onPressed: () {
                       setState(() {
@@ -84,7 +86,7 @@ class _SetupPasswordPageState extends State<SetupPasswordPage> {
                       color: Theme.of(context).primaryColor,
                     )),
                 suffixIconColor: Colors.grey,
-                hintText: '123wert',
+                hintText: '******',
                 hintStyle: GoogleFonts.dmSans(
                   fontSize: 16.sp,
                   color: Colors.grey,
@@ -96,13 +98,7 @@ class _SetupPasswordPageState extends State<SetupPasswordPage> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 240.h, left: 16.w),
-            child: Divider(
-              color: Theme.of(context).primaryColor,
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 260.h, left: 16.w),
+            padding: EdgeInsets.only(top: 280.h, left: 16.w),
             child: Text(
               "Must be least 8 characters.",
               style: GoogleFonts.dmSans(

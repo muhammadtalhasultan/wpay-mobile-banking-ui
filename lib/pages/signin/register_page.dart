@@ -26,11 +26,9 @@ class Registrar extends StatelessWidget {
                   left: 16.w,
                   right: 16.w,
                 ),
-                child: TextField(
+                child: TextFormField(
                   textInputAction: TextInputAction.done,
                   decoration: InputDecoration(
-                    enabledBorder: InputBorder.none,
-                    border: InputBorder.none,
                     hintText: 'Your Email',
                     hintStyle: GoogleFonts.dmSans(
                       fontSize: 16.sp,
@@ -40,16 +38,6 @@ class Registrar extends StatelessWidget {
                   style: GoogleFonts.dmSans(
                       color: Theme.of(context).primaryColor,
                       fontWeight: FontWeight.bold),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(
-                  top: 265.h,
-                  left: 16.w,
-                  right: 16.w,
-                ),
-                child: Divider(
-                  color: Theme.of(context).primaryColor,
                 ),
               ),
               Padding(

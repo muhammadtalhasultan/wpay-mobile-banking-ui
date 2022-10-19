@@ -51,13 +51,14 @@ class NameRegister extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 173.h, left: 16.w),
-              child: TextField(
+              padding: EdgeInsets.only(
+                top: 173.h,
+                left: 16.w,
+                right: 16.w,
+              ),
+              child: TextFormField(
                 textInputAction: TextInputAction.done,
                 decoration: InputDecoration(
-                  enabledBorder: InputBorder.none,
-                  border: InputBorder.none,
-                  suffixIconColor: Colors.grey,
                   hintText: 'Your Name',
                   hintStyle: GoogleFonts.dmSans(
                     fontSize: 16.sp,
@@ -67,12 +68,6 @@ class NameRegister extends StatelessWidget {
                 style: GoogleFonts.dmSans(
                     color: Theme.of(context).primaryColor,
                     fontWeight: FontWeight.bold),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 211.h, left: 16.w),
-              child: Divider(
-                color: Theme.of(context).primaryColor,
               ),
             ),
             Padding(

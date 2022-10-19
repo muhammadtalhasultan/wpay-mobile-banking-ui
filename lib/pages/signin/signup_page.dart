@@ -31,8 +31,9 @@ class Signup extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
             ),
           ),
+          //TODO : setting up these widgets
           Positioned(
-            top: 560.h,
+            bottom: 110.h,
             child: Text(
               "   A new way to pay \n anything more faster",
               style: TextStyle(
@@ -42,7 +43,7 @@ class Signup extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 640.h,
+            bottom: 40.h,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                   primary: const Color(0xff4CD080),
@@ -63,7 +64,7 @@ class Signup extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 710.h,
+            bottom: 10.h,
             child: InkWell(
               onTap: () => Navigator.pushReplacement(
                   context,
