@@ -54,7 +54,7 @@ class Registrar extends StatelessWidget {
                 padding: EdgeInsets.only(top: 325.h, left: 14.w),
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        primary: const Color(0xff4CD080),
+                        backgroundColor: const Color(0xff4CD080),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(16.r)),
                         padding: EdgeInsets.symmetric(
@@ -74,7 +74,7 @@ class Registrar extends StatelessWidget {
                     onTap: () => Navigator.push(
                         context,
                         PageTransition(
-                            child: LoginPage(), type: PageTransitionType.fade)),
+                            child: const LoginPage(), type: PageTransitionType.fade)),
                     child: RichText(
                         text: TextSpan(children: [
                       TextSpan(

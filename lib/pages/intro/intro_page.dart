@@ -16,7 +16,7 @@ class _IntroPageState extends State<IntroPage> {
   final _controller = PageController();
   @override
   void dispose() {
-    // TODO: implement dispose
+
     _controller.dispose();
     super.dispose();
   }

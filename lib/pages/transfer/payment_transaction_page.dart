@@ -155,14 +155,14 @@ class PaymentTransaction extends StatelessWidget {
                   color: const Color(0x0fff2ff2)),
               child: Row(
                 children: [
-                  Container(
+                  SizedBox(
                       width: 80,
                       height: 80,
                       child: SvgPicture.asset("images/Logo.svg")),
                   SizedBox(
                     width: 16.w,
                   ),
-                  Container(
+                  SizedBox(
                     width: 200.w,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -192,7 +192,7 @@ class PaymentTransaction extends StatelessWidget {
             padding: EdgeInsets.only(top: 726.h, left: 10.w),
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    primary: const Color(0xff4CD080),
+                    backgroundColor: const Color(0xff4CD080),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16.r)),
                     padding: EdgeInsets.symmetric(

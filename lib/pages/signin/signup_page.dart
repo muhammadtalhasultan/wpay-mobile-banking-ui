@@ -31,7 +31,6 @@ class Signup extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
             ),
           ),
-          //TODO : setting up these widgets
           Positioned(
             bottom: 110.h,
             child: Text(
@@ -46,7 +45,7 @@ class Signup extends StatelessWidget {
             bottom: 40.h,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  primary: const Color(0xff4CD080),
+                  backgroundColor: const Color(0xff4CD080),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16.r)),
                   padding:
@@ -55,7 +54,7 @@ class Signup extends StatelessWidget {
                 Navigator.pushReplacement(
                     context,
                     PageTransition(
-                        child: LoginPage(), type: PageTransitionType.fade));
+                        child: const LoginPage(), type: PageTransitionType.fade));
               },
               child: Text(
                 "Login",

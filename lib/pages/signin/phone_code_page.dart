@@ -109,7 +109,7 @@ class _EmailVerfiyState extends State<PhoneCode> {
               padding: EdgeInsets.only(top: 369.h, left: 14.w),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: const Color(0xff4CD080),
+                      backgroundColor: const Color(0xff4CD080),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16.r)),
                       padding: EdgeInsets.symmetric(

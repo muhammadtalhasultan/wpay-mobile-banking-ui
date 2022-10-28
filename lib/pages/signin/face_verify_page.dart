@@ -22,7 +22,7 @@ class _FaceIDverifiyState extends State<FaceIDverifiy>
 
   @override
   void initState() {
-    // TODO: implement initState
+
     _controller =
         AnimationController(vsync: this, duration: const Duration(seconds: 2))
           ..addStatusListener((status) {
@@ -47,7 +47,7 @@ class _FaceIDverifiyState extends State<FaceIDverifiy>
 
   @override
   void dispose() {
-    // TODO: implement dispose
+
     _controller!.dispose();
     super.dispose();
   }

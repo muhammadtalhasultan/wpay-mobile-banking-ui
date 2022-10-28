@@ -139,8 +139,7 @@ class _AddCardConfirmState extends State<AddCardConfirm> {
               padding: EdgeInsets.only(top: 726.h, left: 13.w),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary:
-                          Theme.of(context).backgroundColor.withOpacity(0.1),
+                      backgroundColor: Theme.of(context).backgroundColor.withOpacity(0.1),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16.r)),
                       padding: EdgeInsets.symmetric(
@@ -157,7 +156,7 @@ class _AddCardConfirmState extends State<AddCardConfirm> {
               padding: EdgeInsets.only(top: 726.h, left: 195.w),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: const Color(0xff4CD080),
+                      backgroundColor: const Color(0xff4CD080),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16.r)),
                       padding: EdgeInsets.symmetric(

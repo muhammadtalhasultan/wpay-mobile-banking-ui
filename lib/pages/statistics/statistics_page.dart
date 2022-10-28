@@ -22,7 +22,6 @@ class _StatisticState extends State<Statistic> {
 
   @override
   void initState() {
-    // TODO: implement initState
     _chartData = getChartData();
     super.initState();
   }
@@ -343,7 +342,6 @@ class _StatisticState extends State<Statistic> {
                           child: SvgPicture.asset("images/Coffe.svg"),
                         )),
                   ),
-                  // TODO Chart ///s
                   Padding(
                     padding: EdgeInsets.only(top: 660.h, left: 65.w),
                     child: SizedBox(
@@ -361,7 +359,6 @@ class _StatisticState extends State<Statistic> {
                           ],
                         )),
                   ),
-                  // TODO circle small && Text
                   Padding(
                     padding: EdgeInsets.only(top: 917.h, left: 31.w),
                     child: Container(
@@ -389,7 +386,6 @@ class _StatisticState extends State<Statistic> {
                           shape: BoxShape.circle, color: Color(0xff105D38)),
                     ),
                   ),
-                  // TODO && Text
                   Padding(
                     padding: EdgeInsets.only(top: 910.h, left: 45.w),
                     child: Text("Transportation",
@@ -483,7 +479,6 @@ class _StatisticState extends State<Statistic> {
               ),
             ),
           ),
-          //TODO bottom Navigator .....
           Padding(
             padding: EdgeInsets.only(
               top: 730.h,
@@ -516,7 +511,7 @@ class _StatisticState extends State<Statistic> {
                 Navigator.push(
                     context,
                     PageTransition(
-                        child: Statistic(), type: PageTransitionType.fade));
+                        child: const Statistic(), type: PageTransitionType.fade));
               },
               child: SvgPicture.asset(
                 "images/chartback.svg",

@@ -29,8 +29,6 @@ class _HomeState extends State<Home> {
 
   @override
   void initState() {
-    // TODO: implement initState
-
     super.initState();
   }
 
@@ -456,7 +454,7 @@ class _HomeState extends State<Home> {
                 Navigator.push(
                     context,
                     PageTransition(
-                        child: Statistic(), type: PageTransitionType.fade));
+                        child: const Statistic(), type: PageTransitionType.fade));
               },
               child: SvgPicture.asset(
                 "images/chart.svg",

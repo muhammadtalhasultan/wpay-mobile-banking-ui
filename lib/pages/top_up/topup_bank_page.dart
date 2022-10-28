@@ -18,8 +18,8 @@ class _TopUpBankState extends State<TopUpBank> {
   int _currentindex = 0;
   @override
   void initState() {
-    // TODO: implement initState
-    ThemeMode themeMode = ThemeMode.system;
+
+    // ThemeMode themeMode = ThemeMode.system;
 
     super.initState();
   }

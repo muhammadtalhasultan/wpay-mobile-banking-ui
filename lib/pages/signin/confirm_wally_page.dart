@@ -186,7 +186,7 @@ class Confirmwally extends StatelessWidget {
               padding: EdgeInsets.only(top: 726.h, left: 9.w),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: const Color(0xff4CD080),
+                      backgroundColor: const Color(0xff4CD080),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16.r)),
                       padding: EdgeInsets.symmetric(

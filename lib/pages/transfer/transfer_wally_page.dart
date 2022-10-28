@@ -232,7 +232,6 @@ class _TransferWallyState extends State<TransferWally> {
               color: Theme.of(context).primaryColor,
             ),
           ),
-
           Padding(
               padding: EdgeInsets.only(top: 497.h, left: 16.w),
               child: Text("How much would you like to transfer?",
@@ -240,8 +239,6 @@ class _TransferWallyState extends State<TransferWally> {
                     color: Colors.grey,
                     fontSize: 16.sp,
                   ))),
-          //TODO Tags //
-
           Padding(
             padding: EdgeInsets.only(top: 599.h, left: 46.w),
             child: InkWell(
@@ -309,7 +306,7 @@ class _TransferWallyState extends State<TransferWally> {
               padding: EdgeInsets.only(top: 726.h, left: 13.w),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: const Color(0xff4CD080),
+                      backgroundColor: const Color(0xff4CD080),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16.r)),
                       padding: EdgeInsets.symmetric(

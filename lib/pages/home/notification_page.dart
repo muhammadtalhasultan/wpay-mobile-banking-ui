@@ -83,7 +83,7 @@ class NotificationPage extends StatelessWidget {
           Positioned(
             top: 140.h,
             child: Image.asset("images/home_indicator.png",
-                // TODO change colour of home indicator to white
+
                 color: Theme.of(context).backgroundColor.withOpacity(0.1)),
           ),
           Positioned(
@@ -251,7 +251,7 @@ class NotificationPage extends StatelessWidget {
               SizedBox(
                 width: 20.w,
               ),
-              Container(
+              SizedBox(
                 width: 230.w,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

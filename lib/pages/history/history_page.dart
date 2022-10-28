@@ -169,7 +169,8 @@ class _HistoryState extends State<History> {
                                         EdgeInsets.only(top: 290.h, left: 16.w),
                                     child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
-                                            primary: const Color(0xff4CD080),
+                                            backgroundColor:
+                                                const Color(0xff4CD080),
                                             shape: RoundedRectangleBorder(
                                                 borderRadius:
                                                     BorderRadius.circular(
@@ -346,7 +347,6 @@ class _HistoryState extends State<History> {
                     color: Theme.of(context).primaryColor,
                   )),
             ),
-            // TODO Icons ...
             Padding(
               padding: EdgeInsets.only(top: 525.h, left: 16.w),
               child: SvgPicture.asset("images/starbucks.svg"),
@@ -363,7 +363,6 @@ class _HistoryState extends State<History> {
               padding: EdgeInsets.only(top: 750.h, left: 16.w),
               child: SvgPicture.asset("images/starbucks.svg"),
             ),
-            // TODO Divider ...
             Padding(
                 padding: EdgeInsets.only(top: 575.h, left: 16.w, right: 16.w),
                 child: Divider(
@@ -379,7 +378,6 @@ class _HistoryState extends State<History> {
                 child: Divider(
                   color: Theme.of(context).primaryColor,
                 )),
-            // TODO Texts ...
             Padding(
               padding: EdgeInsets.only(top: 525.h, left: 80.w),
               child: Text("Starbucks Coffee",

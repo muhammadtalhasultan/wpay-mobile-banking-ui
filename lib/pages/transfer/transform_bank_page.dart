@@ -36,7 +36,6 @@ class _TransformBankState extends State<TransformBank> {
                     color: Colors.white),
               ),
             ),
-
             Padding(
                 padding: EdgeInsets.only(left: 16.w, top: 60.h),
                 child: InkWell(
@@ -55,7 +54,6 @@ class _TransformBankState extends State<TransformBank> {
                     ),
                   ),
                 )),
-
             Padding(
               padding: EdgeInsets.only(top: 124.h),
               child: Container(
@@ -76,7 +74,6 @@ class _TransformBankState extends State<TransformBank> {
                 color: Theme.of(context).backgroundColor.withOpacity(0.1),
               ),
             ),
-            // TODO texts //
             Padding(
                 padding: EdgeInsets.only(top: 161.h, left: 16.w),
                 child: Text("Bank Account",
@@ -94,7 +91,6 @@ class _TransformBankState extends State<TransformBank> {
                 child: Text("Select bank",
                     style: GoogleFonts.dmSans(
                         fontSize: 16.sp, color: Colors.grey))),
-
             Padding(
                 padding: EdgeInsets.only(top: 340.h, left: 16.w),
                 child: Text("Set amount",
@@ -102,7 +98,6 @@ class _TransformBankState extends State<TransformBank> {
                         color: Theme.of(context).primaryColor,
                         fontSize: 18.sp,
                         fontWeight: FontWeight.bold))),
-
             Padding(
               padding: EdgeInsets.only(top: 210.h, left: 335.w),
               child: SvgPicture.asset("images/navgitorbottome.svg"),
@@ -159,7 +154,6 @@ class _TransformBankState extends State<TransformBank> {
                 color: Theme.of(context).primaryColor,
               ),
             ),
-
             Padding(
                 padding: EdgeInsets.only(top: 369.h, left: 16.w),
                 child: Text("How much would you like to transfer?",
@@ -167,8 +161,6 @@ class _TransformBankState extends State<TransformBank> {
                       color: Colors.grey,
                       fontSize: 16.sp,
                     ))),
-            //TODO Tags //
-
             Padding(
               padding: EdgeInsets.only(top: 471.h, left: 46.w),
               child: InkWell(
@@ -236,7 +228,7 @@ class _TransformBankState extends State<TransformBank> {
                 padding: EdgeInsets.only(top: 726.h, left: 13.w),
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        primary: const Color(0xff4CD080),
+                        backgroundColor: const Color(0xff4CD080),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(16.r)),
                         padding: EdgeInsets.symmetric(

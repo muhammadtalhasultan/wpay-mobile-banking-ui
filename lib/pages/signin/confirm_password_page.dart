@@ -103,7 +103,7 @@ class _ConfirmPasswordPageState extends State<ConfirmPasswordPage> {
             padding: EdgeInsets.only(top: 725.h, left: 16.w),
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    primary: const Color(0xff4CD080),
+                    backgroundColor: const Color(0xff4CD080),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16.r)),
                     padding: EdgeInsets.symmetric(

@@ -38,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
                 decoration: InputDecoration(
                   hintText: 'Your Email',
                   hintStyle: GoogleFonts.dmSans(
-                      fontSize: 16.sp, color: Color(0xFF8F92A1)
+                      fontSize: 16.sp, color: const Color(0xFF8F92A1)
                       //Colors.grey,
                       ),
                 ),
@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                   hintText: 'Password',
                   hintStyle: GoogleFonts.dmSans(
                     fontSize: 16.sp,
-                    color: Color(0xFF8F92A1),
+                    color: const Color(0xFF8F92A1),
                   ),
                 ),
                 style: const TextStyle(
@@ -103,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: const Color(0xff4CD080),
+                      backgroundColor: const Color(0xff4CD080),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16.r)),
                       padding: EdgeInsets.symmetric(
@@ -130,7 +130,7 @@ class _LoginPageState extends State<LoginPage> {
                     TextSpan(
                         text: "New to Wpay? ",
                         style: GoogleFonts.dmSans(
-                            fontSize: 16.sp, color: Color(0xFF8F92A1))),
+                            fontSize: 16.sp, color: const Color(0xFF8F92A1))),
                     TextSpan(
                       text: "Sign Up",
                       style: GoogleFonts.dmSans(
@@ -146,7 +146,7 @@ class _LoginPageState extends State<LoginPage> {
               child: Text(
                 "or continue with",
                 style: GoogleFonts.dmSans(
-                    fontSize: 16.sp, color: Color(0xFF8F92A1)),
+                    fontSize: 16.sp, color: const Color(0xFF8F92A1)),
               ),
             ),
             Padding(
