@@ -1,16 +1,16 @@
-# wpay
+# Wpay Mobile Banking App Ui - Flutter 30+ Screens
+With Dark & Light Theme
 
-A new Flutter project.
+### Support App
 
-## Getting Started
+* ⭐️ Star the repo to show support. ⭐️
 
-This project is a starting point for a Flutter application.
+### 💻 Requirements
 
-A few resources to get you started if this is your first Flutter project:
+- Any Operating System (macOS, Linux, Windows)
+- Any IDE with Flutter SDK installed (Android Studio, VSCode, etc)
+- A little knowledge of Dart and Flutter
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![image](https://github.com/talhasultan-dev/wpay-mobile-banking-ui/assets/31367048/e812c7f2-46a7-48b4-b6ac-7d68b1599c0c)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img align="center" src = "https://profile-counter.glitch.me/wpay-mobile-banking-ui /count.svg" alt ="Loading">
